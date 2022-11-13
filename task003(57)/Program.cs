@@ -13,15 +13,11 @@
 
 void Main()
 {
-    int[,] ourArray = new int[5, 5];
-    //MaxNumber = 10;
+    int[,] ourArray = new int[3, 3];
     GetArray(ourArray);
     PrintArray(ourArray);
     GetStatistic(ourArray);
-
 }
-
-
 int[,] GetArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -33,7 +29,6 @@ int[,] GetArray(int[,] array)
     }
     return array;
 }
-
 void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -46,12 +41,6 @@ void PrintArray(int[,] array)
     }
     Console.WriteLine();
 }
-
-/*int MaxNumber (int[,] arr)
-{
-    int max = 
-}*/
-
 void GetStatistic(int[,] arr)
 {
     for (int i = 0; i < 10; i++)
@@ -61,11 +50,8 @@ void GetStatistic(int[,] arr)
             if (el == i)
             {
                 count++;
-
             }
         Console.WriteLine($" Число {i} встречается {count}");
-
     }
 }
-
 Main();
